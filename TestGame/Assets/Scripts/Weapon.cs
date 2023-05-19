@@ -18,8 +18,8 @@ public class Weapon : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
         Rigidbody2D bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
-        /*bulletRigidbody.velocity = spawnPoint.transform.position * bulletSpeed;*/
-        bullet.Position.x = spawnPoint.Position.x * bulletSpeed;
+        bulletRigidbody.velocity = spawnPoint.transform.position * bulletSpeed;
+       /* bullet.Position.x = spawnPoint.Position.x * bulletSpeed;*/
         Debug.Log("hui");
 
         Destroy(bullet, bulletLifetime);
