@@ -1,16 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lobby : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private Canvas FirstScreen;
+    [SerializeField] private Canvas SecondScreen;
+
+
+
     void Start()
     {
-        
+        SecondScreen.enabled = false;
     }
 
-    // Update is called once per frame
+    public void CreateRoom()
+    {
+        SecondScreen.enabled = true;
+        FirstScreen.enabled = false;
+    }
+
+
     void Update()
     {
         
