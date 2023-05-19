@@ -21,6 +21,12 @@ public class Lobby : MonoBehaviour
         FirstScreen.enabled = false;
     }
 
+    public void EnterRoomName()
+    {
+
+    }
+
+
 
     void Update()
     {
